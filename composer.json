@@ -1,0 +1,25 @@
+{
+  "name": "ibm/ai-travel-planner",
+  "description": "AI-powered Travel Planner using IBM watsonx.ai Granite",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.0",
+    "dompdf/dompdf": "^3.1",
+    "phpmailer/phpmailer": "^7.1"
+  },
+  "suggest": {
+    "phpmailer/phpmailer": "Required for email itinerary feature",
+    "dompdf/dompdf": "Required for PDF generation"
+  },
+  "autoload": {
+    "psr-4": {
+      "TravelPlanner\\": "src/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  }
+}
